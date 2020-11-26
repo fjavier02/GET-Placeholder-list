@@ -1,0 +1,13 @@
+<h1>Lista </h1>
+
+<div *ngFor="let user of users">
+    <ul>
+        <li>Nome: {{user.name}}</li>
+        <li>Users: {{user.username}}</li>
+        <li>Email: {{user.email}}</li>
+        <li>Endereço: {{user.address.street}} , {{user.address.suite}} , {{user.address.city}} , {{user.address.zipcode}}</li>
+        <li>Telefono: {{user.phone}}</li>
+        <li>website: {{user.website}}</li>
+        <li>Nome de empresa: {{user.company.name}}</li>
+    </ul>
+</div>
